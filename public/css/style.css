@@ -8,6 +8,7 @@
 a {
   text-decoration: none;
   color: black;
+  font-size: 16px;
 }
 
 h2 {
@@ -180,6 +181,11 @@ button:hover {
 .restaurant-card__hearth:hover .far {
   opacity: 0;
 }
+@media screen and (min-width: 760px) {
+  .restaurant-card {
+    width: calc(50% - 10px);
+  }
+}
 
 .main {
   z-index: -1;
@@ -227,6 +233,12 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media screen and (min-width: 760px) {
+  .restaurant-container-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
