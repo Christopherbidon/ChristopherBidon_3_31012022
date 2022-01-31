@@ -45,6 +45,51 @@ button:hover {
   box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
+.operation__card {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 7px 10px 2px rgba(0, 0, 0, 0.1);
+  margin: 0 0 20px 12px;
+  height: 70px;
+}
+.operation__card__number {
+  position: absolute;
+  background-color: #9356DC;
+  color: white;
+  font-size: 14px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.operation__card__text {
+  position: relative;
+  line-height: 70px;
+  left: 70px;
+  font-weight: bold;
+}
+.operation__card__text i {
+  position: absolute;
+  display: flex;
+  color: #7E7E7E;
+  font-size: 20px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: -30px;
+  width: 20px;
+  height: auto;
+}
+.operation__card:hover {
+  background-color: #F5EDFF;
+}
+.operation__card:hover i {
+  color: #9356DC;
+}
+
 .main {
   z-index: -1;
 }
@@ -52,7 +97,8 @@ button:hover {
 .localisation {
   height: 65px;
   text-align: center;
-  background-color: #E6E6E6;
+  background-color: #EAEAEA;
+  color: #353535;
 }
 .localisation p {
   line-height: 65px;
@@ -65,7 +111,7 @@ button:hover {
 .quote {
   padding: 50px;
   text-align: center;
-  background-color: #F3F3F3;
+  background-color: #F6F6F6;
 }
 .quote__title {
   font-family: "Roboto", sans-serif;
@@ -74,6 +120,14 @@ button:hover {
 }
 .quote__text {
   padding-bottom: 30px;
+  color: #353535;
+}
+
+.operation {
+  margin: 50px 30px;
+}
+.operation h2 {
+  margin: 30px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
