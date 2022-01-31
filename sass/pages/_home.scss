@@ -34,3 +34,14 @@
         margin: 30px 0;
     }
 }
+
+.restaurant {
+    padding: 50px 30px;
+    background-color: $primarybackground;
+}
+
+.restaurant-container-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
