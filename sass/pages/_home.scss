@@ -2,14 +2,27 @@
     z-index: -1;
 }
 .localisation {
-    height: 60px;
+    height: 65px;
     text-align: center;
-    background-color: rgb(238, 238, 238);
+    background-color: #E6E6E6;
     p {
-        line-height: 60px;
+        line-height: 65px;
         font-size: 20px;
         span {
             margin-right: 10px;
         }
+    }
+}
+.quote {
+    padding: 50px;
+    text-align: center;
+    background-color: #F3F3F3;
+    &__title {
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    &__text {
+        padding-bottom: 30px;
     }
 }
