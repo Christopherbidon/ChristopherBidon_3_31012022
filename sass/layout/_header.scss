@@ -1,0 +1,12 @@
+.header {
+    @include flexcenter;
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+    &__logo {
+        height: 50%;
+        img {
+            height: 100%;
+        }
+    }
+}
