@@ -1,0 +1,21 @@
+.footer {
+    padding: 30px;
+    background-color: $secondarytextcolor;
+    h3 {
+        font-family: 'Shrikhand', sans-serif;
+        margin-bottom: 20px;
+        font-size: 18px;
+        color: white;
+    }
+    &__item{
+        list-style-type: none;
+        line-height: 25px;
+        a {
+            color: white;
+        }
+        span {
+            width: 30px;
+            font-size: 15px;
+        }
+    }
+}
