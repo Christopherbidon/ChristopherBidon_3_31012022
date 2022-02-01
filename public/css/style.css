@@ -71,6 +71,7 @@ button {
   padding: 0 20px;
   border-radius: 30px;
   box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 button:hover {
   background-image: linear-gradient(345deg, #ae80e5, #fface8);
@@ -83,6 +84,7 @@ button:hover {
   box-shadow: 0 7px 10px 2px rgba(0, 0, 0, 0.1);
   margin: 0 0 20px 12px;
   height: 70px;
+  cursor: pointer;
 }
 .operation__card__number {
   position: absolute;
@@ -99,27 +101,26 @@ button:hover {
   transform: translateY(-50%);
 }
 .operation__card__text {
-  position: relative;
   line-height: 70px;
-  left: 70px;
   font-weight: bold;
 }
-.operation__card__text i {
-  position: absolute;
-  display: flex;
+.operation__card__text span {
   color: #7E7E7E;
   font-size: 20px;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: -30px;
-  width: 20px;
-  height: auto;
+  width: 80px;
+  height: 100%;
+  padding-left: 40px;
 }
 .operation__card:hover {
   background-color: #F5EDFF;
 }
-.operation__card:hover i {
+.operation__card:hover span {
   color: #9356DC;
+}
+@media screen and (min-width: 1024px) {
+  .operation__card {
+    width: calc(32% - 10px);
+  }
 }
 
 .restaurant-card {
@@ -171,15 +172,20 @@ button:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease;
 }
 .restaurant-card__hearth .far {
   opacity: 1;
+  transition: all 0.5s ease;
 }
 .restaurant-card__hearth:hover .fas {
   opacity: 1;
 }
 .restaurant-card__hearth:hover .far {
   opacity: 0;
+}
+.restaurant-card:hover {
+  transform: scale(1.01);
 }
 @media screen and (min-width: 760px) {
   .restaurant-card {
@@ -222,6 +228,17 @@ button:hover {
 
 .operation {
   padding: 50px 30px;
+}
+.operation__container-cards {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .operation__container-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
 .restaurant {
