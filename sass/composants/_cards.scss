@@ -113,3 +113,58 @@
         width: calc(50% - 10px);
     }
 }
+
+//**********************CARD-MENU-COURSE****************
+.card-course {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 7px 10px 2px rgba(0,0,0,0.1);
+    overflow: hidden;
+    &__price{
+      display: flex;
+      margin-left: auto;
+      align-items: flex-end;
+      height: 100%;
+      width: 45px;
+      span {
+        padding-bottom: 12px;
+        font-weight: bold;
+        color: $secondarytextcolor;
+      }
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 12px;
+      width: calc(100% - 60px);
+    }
+    &__desc {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: $secondarytextcolor;
+    }
+    &__animation {
+        display: none;
+    }
+    &:hover {
+      .card-course__animation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 60px;
+        background: $tertiarycolor;
+        font-size: 20px;
+        color: white;
+      }
+      .card-course__text{
+        width: calc(100% - 120px)
+      }
+    }
+  }
