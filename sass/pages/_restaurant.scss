@@ -15,6 +15,13 @@
     height: calc(100% + 40px);
     top: -40px;
     border-radius: 40px 40px 0 0;
+    &__container{
+        @include min-media('desktop') {
+            display: flex;
+            width: 100%;
+            gap: 20px;
+        }
+    }
     .box-title {
         position: relative;
         height: 40px;
@@ -23,6 +30,9 @@
 }
 .container-card{
     margin-bottom: 40px;
+    @include min-media('desktop') {
+        flex: 1 1 33%;
+    }
     &__title{
     font-size: 18px;
     font-weight: initial;
@@ -44,4 +54,7 @@
     align-items: center;
     width: 100%;
     margin-top: 60px;
+    @include min-media('desktop') {
+        margin-top: 0;
+    }
 }

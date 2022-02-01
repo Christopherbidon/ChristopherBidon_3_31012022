@@ -125,29 +125,29 @@
     box-shadow: 0 7px 10px 2px rgba(0,0,0,0.1);
     overflow: hidden;
     &__price{
-      display: flex;
-      margin-left: auto;
-      align-items: flex-end;
-      height: 100%;
-      width: 50px;
-      span {
-        padding-bottom: 12px;
-        font-weight: bold;
-        color: $secondarytextcolor;
-      }
+        display: flex;
+        margin-left: auto;
+        align-items: flex-end;
+        height: 100%;
+        width: 50px;
+        span {
+            padding-bottom: 12px;
+            font-weight: bold;
+            color: $secondarytextcolor;
+        }
     }
     &__text {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 12px;
-      width: calc(100% - 60px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 12px;
+        width: calc(100% - 60px);
     }
     &__desc {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      color: $secondarytextcolor;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $secondarytextcolor;
     }
     &__animation {
         display: flex;
@@ -162,15 +162,15 @@
         transform-origin: center right;
     }
     &:hover {
-      .card-course__animation{
-        animation: grow 1s ease forwards;
-        span {
-            animation: rotate 1s linear;
+        .card-course__animation{
+            animation: grow 1s ease forwards;
+            span {
+                animation: rotate 1s linear;
+            }
         }
-      }
-      .card-course__text{
-        animation: shrink 1s ease forwards;
-      }
+        .card-course__text{
+            animation: shrink 1s ease forwards;
+        }
     }
   }
 
@@ -185,16 +185,16 @@
     @keyframes grow {
         from {
             width: 0;
-  }
-  to {
-    width: 60px
-  }
-  }
-  @keyframes shrink {
-      from {
-          width: calc(100% - 60px);
-      }
-      to {
-          width: calc(100% - 120px)
-      }
-      }
+        }
+        to {
+            width: 60px
+        }
+    }
+    @keyframes shrink {
+        from {
+            width: calc(100% - 60px);
+        }
+        to {
+            width: calc(100% - 120px)
+        }
+    }
