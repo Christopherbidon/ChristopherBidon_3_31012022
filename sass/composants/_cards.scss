@@ -164,30 +164,37 @@
     &:hover {
       .card-course__animation{
         animation: grow 1s ease forwards;
-        width: 60px;
         span {
             animation: rotate 1s linear;
         }
       }
       .card-course__text{
-        width: calc(100% - 120px)
+        animation: shrink 1s ease forwards;
       }
     }
   }
 
-  @keyframes rotate {
+    @keyframes rotate {
+        from {
+            transform: rotate(180deg);
+        }
+        to {
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes grow {
+        from {
+            width: 0;
+  }
+  to {
+    width: 60px
+  }
+  }
+  @keyframes shrink {
       from {
-        transform: rotate(180deg);
+          width: calc(100% - 60px);
       }
       to {
-        transform: rotate(0deg);
+          width: calc(100% - 120px)
       }
-  }
-  @keyframes grow {
-    from {
-      width: 0;
-    }
-    to {
-      width: 60px
-    }
-}
+      }
