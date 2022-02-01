@@ -129,7 +129,7 @@
       margin-left: auto;
       align-items: flex-end;
       height: 100%;
-      width: 45px;
+      width: 50px;
       span {
         padding-bottom: 12px;
         font-weight: bold;
@@ -150,21 +150,44 @@
       color: $secondarytextcolor;
     }
     &__animation {
-        display: none;
-    }
-    &:hover {
-      .card-course__animation{
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
-        width: 60px;
+        width: 0;
         background: $tertiarycolor;
         font-size: 20px;
         color: white;
+        overflow: hidden;
+        transform-origin: center right;
+    }
+    &:hover {
+      .card-course__animation{
+        animation: grow 1s ease forwards;
+        width: 60px;
+        span {
+            animation: rotate 1s linear;
+        }
       }
       .card-course__text{
         width: calc(100% - 120px)
       }
     }
   }
+
+  @keyframes rotate {
+      from {
+        transform: rotate(180deg);
+      }
+      to {
+        transform: rotate(0deg);
+      }
+  }
+  @keyframes grow {
+    from {
+      width: 0;
+    }
+    to {
+      width: 60px
+    }
+}

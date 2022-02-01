@@ -216,7 +216,7 @@ button:hover {
   margin-left: auto;
   align-items: flex-end;
   height: 100%;
-  width: 45px;
+  width: 50px;
 }
 .card-course__price span {
   padding-bottom: 12px;
@@ -237,22 +237,44 @@ button:hover {
   color: #353535;
 }
 .card-course__animation {
-  display: none;
-}
-.card-course:hover .card-course__animation {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 60px;
+  width: 0;
   background: #99E2D0;
   font-size: 20px;
   color: white;
+  overflow: hidden;
+  transform-origin: center right;
+}
+.card-course:hover .card-course__animation {
+  animation: grow 1s ease forwards;
+  width: 60px;
+}
+.card-course:hover .card-course__animation span {
+  animation: rotate 1s linear;
 }
 .card-course:hover .card-course__text {
   width: calc(100% - 120px);
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}
 .hearth {
   position: absolute;
   top: 50%;
