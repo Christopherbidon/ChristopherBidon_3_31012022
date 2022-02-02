@@ -149,6 +149,11 @@
         text-overflow: ellipsis;
         color: $secondarytextcolor;
     }
+    &__title{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     &__animation {
         display: flex;
         justify-content: center;

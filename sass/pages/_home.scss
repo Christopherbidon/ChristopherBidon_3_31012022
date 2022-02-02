@@ -26,7 +26,10 @@
     }
 }
 .operation {
-    padding: 50px 30px;
+    padding: 50px 5%;
+    @include min-media("desktop") {
+        padding: 50px 30px;
+    }
     &__container-cards {
         width: 100%;
         @include min-media("desktop") {
@@ -39,8 +42,11 @@
 }
 
 .restaurant {
-    padding: 50px 30px;
+    padding: 50px 5%;
     background-color: $primarybackground;
+    @include min-media("desktop") {
+        padding: 50px 30px;
+    }
 }
 
 .restaurant-container-cards {
