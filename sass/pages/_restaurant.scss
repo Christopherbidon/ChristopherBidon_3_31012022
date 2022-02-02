@@ -10,16 +10,17 @@
 }
 .menu {
     position: relative;
+    width: 100%;
     padding: 30px 15px;
     margin-top: -40px;
     background-color: $primarybackground;
-    height: calc(100% + 40px);
     border-radius: 40px 40px 0 0;
     &__container{
         @include min-media('desktop') {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             width: 100%;
-            gap: 20px;
+            gap: 15px;
         }
     }
     .box-title {
@@ -31,7 +32,10 @@
 .container-card{
     margin-bottom: 40px;
     @include min-media('desktop') {
-        flex: 1 1 33%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
     }
     &__title{
     font-size: 18px;
