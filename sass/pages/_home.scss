@@ -27,7 +27,7 @@
 }
 .operation {
     padding: 50px 5%;
-    @include min-media("desktop") {
+    @include min-media("tablet") {
         padding: 50px 30px;
     }
     &__container-cards {
@@ -44,7 +44,7 @@
 .restaurant {
     padding: 50px 5%;
     background-color: $primarybackground;
-    @include min-media("desktop") {
+    @include min-media("tablet") {
         padding: 50px 30px;
     }
 }

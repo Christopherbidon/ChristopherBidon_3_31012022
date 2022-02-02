@@ -130,7 +130,7 @@ button:hover {
 }
 @media screen and (min-width: 1024px) {
   .operation__card {
-    width: calc(32% - 10px);
+    flex: 1 1 30%;
   }
 }
 
@@ -373,7 +373,7 @@ button:hover {
 .operation {
   padding: 50px 5%;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 760px) {
   .operation {
     padding: 50px 30px;
   }
@@ -394,7 +394,7 @@ button:hover {
   padding: 50px 5%;
   background-color: #F6F6F6;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 760px) {
   .restaurant {
     padding: 50px 30px;
   }

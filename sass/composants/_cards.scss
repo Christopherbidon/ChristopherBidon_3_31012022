@@ -38,7 +38,7 @@
         }
     }
     @include min-media("desktop") {
-        width: calc(32% - 10px);
+        flex: 1 1 30%;
     }
 }
 
