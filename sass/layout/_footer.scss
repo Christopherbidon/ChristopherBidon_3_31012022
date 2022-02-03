@@ -12,6 +12,10 @@
         line-height: 25px;
         a {
             color: white;
+            &:hover {
+                color: $secondarycolor;
+                font-weight: bold;
+            }
         }
         span {
             width: 30px;
