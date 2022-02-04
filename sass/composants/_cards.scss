@@ -6,8 +6,7 @@
     border-radius: 20px;
     box-shadow: 0 7px 10px 2px rgba(0,0,0,0.1);
     margin: 0 0 20px 12px;
-    height: 70px;
-    cursor: pointer;
+    height: 75px;
     &__number {
         position: absolute;
         background-color: $primarycolor;
@@ -23,7 +22,7 @@
         transform: translateY(-50%);
     }
     &__text {
-        line-height: 70px;
+        line-height: 75px;
         font-weight: bold;
         span {
             color: $tertiarytextcolor;
@@ -33,8 +32,9 @@
             padding-left: 40px;
         }
     }
-    &:hover {
+    &--active {
         background-color: #F5EDFF;
+        cursor: pointer;
         span{
             color: $primarycolor;
         }
