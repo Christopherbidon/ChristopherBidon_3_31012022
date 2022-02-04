@@ -53,15 +53,15 @@ h1 {
   padding: 30px;
   background-color: #353535;
 }
-.footer h3 {
+.footer__item {
+  list-style-type: none;
+  line-height: 25px;
+}
+.footer__item h3 {
   font-family: "Shrikhand", sans-serif;
   margin-bottom: 20px;
   font-size: 18px;
   color: white;
-}
-.footer__item {
-  list-style-type: none;
-  line-height: 25px;
 }
 .footer__item a {
   color: white;
@@ -73,6 +73,18 @@ h1 {
 .footer__item span {
   width: 30px;
   font-size: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer h3 {
+    margin: 0;
+    font-size: 30px;
+  }
 }
 
 button {
@@ -213,6 +225,11 @@ button:hover {
 @media screen and (min-width: 760px) {
   .restaurant-card {
     width: calc(50% - 10px);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-card {
+    width: calc(25% - 15px);
   }
 }
 .restaurant-card__new {
@@ -403,6 +420,7 @@ button:hover {
   font-size: 70px;
   font-family: "Shrikhand", sans-serif;
   color: #99E2D0;
+  overflow: visible;
   animation: jump 0.75s 4 ease-in-out alternate;
 }
 .spin-loader p:nth-child(1) {
@@ -448,17 +466,28 @@ button:hover {
   }
 }
 .localisation {
+  display: flex;
+  flex-direction: row;
   height: 65px;
   text-align: center;
   background-color: #EAEAEA;
   color: #353535;
-}
-.localisation p {
-  line-height: 65px;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
 }
-.localisation p span {
-  margin-right: 10px;
+.localisation label {
+  margin-right: 20px;
+}
+.localisation input {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  width: 150px;
+  border: none;
+  background-color: transparent;
+}
+.localisation input:focus-visible {
+  outline: none;
 }
 
 .quote {

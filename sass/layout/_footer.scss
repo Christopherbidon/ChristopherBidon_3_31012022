@@ -1,15 +1,15 @@
 .footer {
     padding: 30px;
     background-color: $secondarytextcolor;
-    h3 {
-        font-family: 'Shrikhand', sans-serif;
-        margin-bottom: 20px;
-        font-size: 18px;
-        color: white;
-    }
     &__item{
         list-style-type: none;
         line-height: 25px;
+        h3 {
+            font-family: 'Shrikhand', sans-serif;
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: white;
+        }
         a {
             color: white;
             &:hover {
@@ -20,6 +20,18 @@
         span {
             width: 30px;
             font-size: 15px;
+        }
+    }
+    @include min-media('desktop'){
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        h3 {
+            margin: 0;
+            font-size: 30px;
         }
     }
 }

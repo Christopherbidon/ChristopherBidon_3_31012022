@@ -117,6 +117,9 @@
     @include min-media("tablet") {
         width: calc(50% - 10px);
     }
+    @include min-media("desktop") {
+        width: calc(25% - 15px);
+    }
     &__new {
         position: absolute;
         background-color: #99E2D0;
