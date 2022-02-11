@@ -14,6 +14,7 @@
         opacity: 0;
         background-image: linear-gradient(180deg, $primarycolor, $secondarycolor);
         background-clip: text;
+        -moz-background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }

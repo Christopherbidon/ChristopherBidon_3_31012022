@@ -9,16 +9,19 @@
     background-color: rgba(255, 255, 255, 0.9);
     animation: hidden .2s 3s forwards;
     p {
-        font-size: 70px;
+        font-size: 60px;
+        padding: 1px;
         font-family: 'Shrikhand', sans-serif;
         color: #99E2D0;
-        overflow: visible;
         animation: jump .75s 4 ease-in-out alternate;
         @for $i from 1 through 8 {
             &:nth-child(#{$i}){
             animation-delay: .125s * $i;
             }
         }
+    }
+    @include min-media("tablet") {
+        font-size: 100px;
     }
 }
 @keyframes jump {
