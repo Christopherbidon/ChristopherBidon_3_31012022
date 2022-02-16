@@ -12,7 +12,7 @@
         font-size: 60px;
         padding: 1px;
         font-family: 'Shrikhand', sans-serif;
-        color: #99E2D0;
+        color: $tertiarycolor;
         animation: jump .75s 4 ease-in-out alternate;
         @for $i from 1 through 8 {
             &:nth-child(#{$i}){
@@ -27,10 +27,10 @@
 @keyframes jump {
     0% {
         transform: translateY(0);
-        color: #9356DC;
+        color: $primarycolor;
     }
     50% {
-        color: #FF79DA;
+        color: $secondarycolor;
     }
     100% {
         transform: translateY(-50px);
